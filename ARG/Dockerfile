@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version:-9}
 ENV version="1.0" \
       description="This text illustrates"
 ARG USERNAME="manju"
